@@ -8,14 +8,15 @@
                   :weight 'normal
                   :slant 'normal
                   :size 10.0))
-(dolist (charset '(kana han symbol cjk-misc bopomofo))
-  (set-fontset-font
-   (frame-parameter nil 'font)
-   charset
-   (font-spec :name "-WenQ-文泉驿等宽正黑-normal-normal-normal-*-*-*-*-*-*-0-iso10646-1"
-              :weight 'normal
-              :slant 'normal
-              :size 12.0)))
+  (dolist (charset '(kana han symbol cjk-misc bopomofo))
+    (set-fontset-font
+     (frame-parameter nil 'font)
+     charset
+     (font-spec :name "-WQYF-文泉驿等宽微米黑-normal-normal-normal-*-*-*-*-*-*-0-iso10646-1"
+                :weight 'normal
+                :slant 'normal
+                :size 12.0)))
+
 ;; 启动最大化
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
 
