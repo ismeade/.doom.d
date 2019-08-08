@@ -29,3 +29,7 @@
                   org-level-8))
     (set-face-attribute face nil :weight 'normal))
   )
+
+(linum-relative-global-mode t)
+
+(add-hook 'before-save-hook 'gofmt-before-save)
