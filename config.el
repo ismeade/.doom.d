@@ -33,3 +33,8 @@
 (linum-relative-global-mode t)
 
 (add-hook 'before-save-hook 'gofmt-before-save)
+
+;;(exec-path-from-shell-copy-env "GOPATH")
+;;(exec-path-from-shell-copy-env "GOROOT")
+;;(exec-path-from-shell-copy-env "GOBIN")
+(exec-path-from-shell-copy-env "PATH")

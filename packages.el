@@ -7,3 +7,4 @@
 ;; (package! builtin-package :disable t)
 
 (package! linum-relative)
+(package! exec-path-from-shell)
