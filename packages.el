@@ -8,3 +8,4 @@
 
 (package! linum-relative)
 (package! exec-path-from-shell)
+(package! gruvbox-theme)

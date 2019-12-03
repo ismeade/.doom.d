@@ -32,6 +32,9 @@
 
 (linum-relative-global-mode t)
 
+;; 设置主题
+(load-theme 'gruvbox-dark-soft t)
+
 (add-hook 'before-save-hook 'gofmt-before-save)
 
 ;;(exec-path-from-shell-copy-env "GOPATH")
