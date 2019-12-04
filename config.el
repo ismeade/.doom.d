@@ -35,6 +35,9 @@
 ;; 设置主题
 (load-theme 'gruvbox-dark-soft t)
 
+;; 设置任务状态变成Done时标记时间
+(setq org-log-done 'time)
+
 (add-hook 'before-save-hook 'gofmt-before-save)
 
 ;;(exec-path-from-shell-copy-env "GOPATH")
