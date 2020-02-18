@@ -71,7 +71,7 @@
        ;;ansible
        ;;debugger          ; FIXME stepping through code, to help you add bugs
        ;;direnv
-       ;;docker
+       docker
        ;;editorconfig      ; let someone else argue about tabs vs spaces
        ;;ein               ; tame Jupyter notebooks with emacs
        eval              ; run code, run (also, repls)
@@ -182,7 +182,9 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(org-agenda-files (quote ("~/org/todo.org" "~/Documents/agenda.org"))))
+ '(org-agenda-files
+   (quote
+    ("~/gtd/work.org" "~/gtd/notes.org" "~/gtd/todo.org"))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
