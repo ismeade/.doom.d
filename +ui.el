@@ -5,7 +5,7 @@
  :font (font-spec :name "-PfEd-DejaVu Sans Mono-bold-normal-normal-*-*-*-*-*-m-0-iso10646-1"
                   :weight 'normal
                   :slant 'normal
-                  :size 10.0))
+                  :size 13.0))
   (dolist (charset '(kana han symbol cjk-misc bopomofo))
     (set-fontset-font
      (frame-parameter nil 'font)
@@ -13,7 +13,7 @@
      (font-spec :name "-WQYF-文泉驿等宽微米黑-normal-normal-normal-*-*-*-*-*-*-0-iso10646-1"
                 :weight 'normal
                 :slant 'normal
-                :size 12.0)))
+                :size 15.0)))
 
 ;; 启动最大化
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
