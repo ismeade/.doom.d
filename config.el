@@ -4,20 +4,8 @@
 
 (load! "+ui")
 ;;(load! "+auto-save")
-(after! org (load! "+org"))
-
-(add-hook 'before-save-hook 'gofmt-before-save)
-
-(defun lsp-go-install-save-hooks ()
-  (add-hook 'before-save-hook #'lsp-format-buffer t t)
-  (add-hook 'before-save-hook #'lsp-organize-imports t t))
-(add-hook 'go-mode-hook #'lsp-go-install-save-hooks)
-(add-hook 'go-mode-hook #'lsp)
-
-;;(after! (:and go lsp company)
-;;  (set-company-backend! 'go-mode '(company-lsp :with company-yasnippet)))
-(after! go-mode
-  (set-company-backend! 'go-mode 'company-lsp))
+;;(after! org (load! "+org"))
+;;(after! go (load! "+go"))
 
 ;; Company
 (after! company
@@ -25,10 +13,6 @@
         company-minimum-prefix-length 1
         company-box-doc-enable nil
         company-box-enable-icon nil))
-;;
-;;(after! company '(lambda ()
-;;                   (setq-local company-backends '(company-lsp))
- ;;                  ))
 
 ;;(auto-save-enable)              ;; 开启自动保存功能
 ;;(setq auto-save-slient t)       ;; 自动保存的时候静悄悄的， 不要打扰我

@@ -176,7 +176,11 @@
        ;; The default module sets reasonable defaults for Emacs. It also
        ;; provides a Spacemacs-inspired keybinding scheme and a smartparens
        ;; config. Use it as a reference for your own modules.
-       (default +bindings +smartparens))
+       (default +bindings +smartparens)
+       :private
+       my-org
+       my-go
+       )
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -184,7 +188,7 @@
  ;; If there is more than one, they won't work right.
  '(org-agenda-files
    (quote
-    ("~/gtd/work.org" "~/gtd/notes.org" "~/gtd/todo.org"))))
+    ("~/org/work.org" "~/org/notes.org" "~/org/todo.org"))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
