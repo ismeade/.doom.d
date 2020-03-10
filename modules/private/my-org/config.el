@@ -4,6 +4,7 @@
   :config
   ;; 设置任务状态变成Done时标记时间
   (setq org-log-done 'time)
+  (setq org-tags-column -77)
   ;; org标题字体取消加粗
   (dolist (face '(org-level-1
                   org-level-2
