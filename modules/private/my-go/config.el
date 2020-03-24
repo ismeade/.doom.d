@@ -10,4 +10,10 @@
     (add-hook 'before-save-hook #'lsp-organize-imports t t))
   (add-hook 'go-mode-hook #'lsp-go-install-save-hooks)
   (add-hook 'go-mode-hook #'lsp)
+  ;; 载入shell环境
+  (exec-path-from-shell-copy-env "GOPATH")
+  (exec-path-from-shell-copy-env "GOROOT")
+  (exec-path-from-shell-copy-env "GOBIN")
+  (exec-path-from-shell-copy-env "PATH")
+  (exec-path-from-shell-initialize)
   )
