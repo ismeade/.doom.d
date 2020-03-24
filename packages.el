@@ -9,3 +9,4 @@
 (package! linum-relative)
 (package! exec-path-from-shell)
 (package! gruvbox-theme)
+(package! company-box :disable t)
