@@ -1,4 +1,4 @@
-;;; private/my-org/config.el -*- lexical-binding: t; -*-
+;;; ~/.doom.d/+org.el -*- lexical-binding: t; -*-
 
 (def-package! org
   :config
@@ -19,4 +19,5 @@
   (defun open-dired-gtd()
     (interactive)
     (dired "~/org"))
+
   )

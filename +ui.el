@@ -22,4 +22,7 @@
 ;; (linum-relative-global-mode t)
 
 ;; 设置主题
-(load-theme 'gruvbox-dark-soft t)
+;;(load-theme 'gruvbox-dark-soft t)
+(setq doom-theme 'gruvbox-dark-soft)
+
+(setq display-line-numbers-type t)

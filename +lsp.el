@@ -1,8 +1,15 @@
 ;;; ~/.doom.d/+lsp.el -*- lexical-binding: t; -*-
 
 (def-package! lsp-ui
+  :hook (lsp-mode . lsp-ui-mode)
   :config
-  (add-hook 'lsp-ui-mode-hook #'lsp-ui-doc-mode 1)
-  (setq lsp-ui-doc-max-height 20)
-  (setq lsp-ui-doc-max-width 60)
+  (setq lsp-ui-doc-enable t
+        lsp-ui-doc-max-height 20
+        lsp-ui-doc-max-width 60
+        lsp-ui-doc-position 'at-point
+        )
+
   )
+
+(def-package! company-lsp
+  :after lsp-mode)
