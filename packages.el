@@ -53,3 +53,5 @@
 ;;(package! linum-relative)
 (package! exec-path-from-shell)
 (package! gruvbox-theme)
+
+(package! lsp-java)
