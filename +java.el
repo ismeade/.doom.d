@@ -2,7 +2,7 @@
 
 ;; Download Eclipse JDT Language Server
 ;; url https://projects.eclipse.org/projects/eclipse.jdt.ls/downloads
-(def-package! lsp-java
+(use-package! lsp-java
   :ensure t
   :after lsp
   :config

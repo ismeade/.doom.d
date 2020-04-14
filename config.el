@@ -56,3 +56,4 @@
 (load! "+org")
 (load! "+go")
 (load! "+lsp")
+(load! "+quick")

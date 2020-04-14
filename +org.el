@@ -1,6 +1,6 @@
 ;;; ~/.doom.d/+org.el -*- lexical-binding: t; -*-
 
-(def-package! org
+(use-package! org
   :config
   ;; 设置任务状态变成Done时标记时间
   (setq org-log-done 'time)
@@ -14,10 +14,15 @@
                   org-level-6
                   org-level-7
                   org-level-8))
-  (set-face-attribute face nil :weight 'normal))
-  ;; 使用dired快速打开gtd文件夹
-  (defun open-dired-gtd()
-    (interactive)
-    (dired "~/org"))
+    (set-face-attribute face nil :weight 'normal))
+  
+  ;; (add-hook 'org-mode-hook #'org-save-hooks)
 
+  ;; (defun org-save-hooks ()
+  ;;   (add-hook 'before-save-hook #'indent-buffer))
+  
+  ;; (defun indent-buffer ()
+  ;;   "Indent the whole buffer."
+  ;;   (save-excursion
+  ;;     (indent-region (point-min) (point-max) nil))
   )

@@ -1,6 +1,6 @@
 ;;; ~/.doom.d/+lsp.el -*- lexical-binding: t; -*-
 
-(def-package! lsp-ui
+(use-package! lsp-ui
   :hook (lsp-mode . lsp-ui-mode)
   :config
   (setq lsp-ui-doc-enable t
@@ -11,5 +11,5 @@
 
   )
 
-(def-package! company-lsp
+(use-package! company-lsp
   :after lsp-mode)
